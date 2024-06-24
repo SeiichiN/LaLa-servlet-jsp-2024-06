@@ -16,7 +16,7 @@ public class UranaiServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String[] luckArray = {"超スッキリ", "スッキリ", "最悪"};
+		String[] luckArray = {"超スッキリ", "まあまあスッキリ", "サイテー"};
 		int index = (int)(Math.random() * 3);
 		String luck = luckArray[index];
 		Date date = new Date();
