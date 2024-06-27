@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>じゃんけんゲーム</h1>
-	<form action="" method="">
+	<form action="janken" method="post">
 		<input type="radio" name="hand" value="0">グー
 		<input type="radio" name="hand" value="1">チョキ
 		<input type="radio" name="hand" value="2">パー<br>
