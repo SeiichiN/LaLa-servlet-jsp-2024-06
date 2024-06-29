@@ -11,7 +11,11 @@ Human human = (Human) session.getAttribute("human");
 <title>Insert title here</title>
 </head>
 <body>
-	<h1><%= human.getName() %>: <%= human.getAge() %>歳</h1>
-	<p><a href="delete">削除</a></p>
+	<% if (human != null) { %>
+		<h1><%= human.getName() %>: <%= human.getAge() %>歳</h1>
+		<p><a href="delete">削除</a></p>
+	<% } else { %>
+		<p>"human"は削除しました</p>
+	<% } %>
 </body>
 </html>
