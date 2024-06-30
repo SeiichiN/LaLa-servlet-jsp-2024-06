@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body, p, h1, h2, h3, ul {
+	margin: 0;
+}
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #444;
+}
+
+.center-align {
+	width: 70%;
+	margin: 0 auto;
+}
+
+header {
+	background-color: lightblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+main {
+	margin-bottom: 50px;
+}
+
+.button-area {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer {
+	background-color: lightblue;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}

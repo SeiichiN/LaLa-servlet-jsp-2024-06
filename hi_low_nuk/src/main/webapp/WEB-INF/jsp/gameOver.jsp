@@ -5,9 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>ハイ・ロー ゲーム</h1>
-	<p>お疲れ様でした</p>
+	<header>
+		<h1 class="center-align">ハイ・ロー ゲーム</h1>
+	</header>
+	<main class="center-align">
+		<section>
+			<p>お疲れ様でした</p>
+		</section>
+	</main>
+	<footer>
+		<small>&copy; 2024 Seiichi Nukayama</small>
+	</footer>
 </body>
 </html>
