@@ -1,17 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="model.Game" %>
 <%
-String errMsg = (String) request.getAttribute("errMsg");
+Game game = (Game) session.getAttribute("game");
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+<<<<<<< HEAD
 <title>ハイ・ロー ゲーム</title>
+=======
+<title>ハイ・ローゲーム</title>
+>>>>>>> main
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
+<<<<<<< HEAD
 		<h1 class="center-align">ハイ・ロー ゲーム</h1>
 	</header>
 	<main class="center-align">
@@ -24,6 +30,23 @@ String errMsg = (String) request.getAttribute("errMsg");
 			</form>
 			<% if (errMsg != null) { %>
 				<p style="color:red"><%= errMsg %></p>
+=======
+		<h1 class="center-align">ハイ・ローゲーム</h1>
+	</header>
+	<main class="center-align">
+		<section>
+			<p>わたしの考えた数字を当ててください</p>
+			<p>1～99のどれかです</p>
+			<form action="play" method="post">
+				<input type="text" name="user">
+				<input type="submit" value="これだ!">
+			</form>
+		</section>
+		<section>
+			<% if (game.getUser() != 0) { %>
+				<p>あなたの数字: <%= game.getUser() %></p>
+				<p><%= game.getResult() %></p>
+>>>>>>> main
 			<% } %>
 		</section>
 	</main>
